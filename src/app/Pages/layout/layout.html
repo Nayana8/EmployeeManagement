@@ -1,0 +1,109 @@
+<div class="layout-shell">
+	<input class="sidebar-switch" id="sidebar-switch" type="checkbox" aria-label="Toggle sidebar" />
+	<div class="layout-frame">
+		<aside class="sidebar" aria-label="Main navigation">
+			<a class="brand" href="/admin/dashboard" aria-label="EmployeeHub dashboard">
+				<span class="brand-mark" aria-hidden="true">e</span>
+				<span class="brand-name">employee<span>hub</span></span>
+			</a>
+
+			<p class="nav-caption">WORKSPACE</p>
+			<nav class="side-nav">
+				<a class="nav-link active" href="/admin/dashboard" aria-current="page">
+					<span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">Dashboard</span>
+				</a>
+				<a class="nav-link" href="/admin/employeesList">
+					<span class="nav-icon" aria-hidden="true">♙</span><span class="nav-label">Employees</span>
+				</a>
+			</nav>
+
+			<div class="sidebar-bottom">
+				<div class="team-summary">
+					<span class="team-summary-icon" aria-hidden="true">✳</span>
+					<div class="team-summary-copy"><strong>Your team</strong><span>People make it work.</span></div>
+				</div>
+				<span class="sidebar-version">EMPLOYEEHUB · WORKSPACE</span>
+			</div>
+		</aside>
+
+		<div class="main-column">
+			<header class="topbar">
+				<div class="topbar-leading">
+					<label class="menu-toggle" for="sidebar-switch" title="Toggle sidebar" aria-label="Toggle sidebar">
+						<span></span><span></span><span></span>
+					</label>
+					<div class="breadcrumb"><span>Workspace</span><span class="breadcrumb-divider">/</span><strong>Dashboard</strong></div>
+				</div>
+				<div class="topbar-account">
+					<div class="user-info">
+						<span class="user-avatar" aria-hidden="true">AU</span>
+						<span class="user-copy"><strong>Admin User</strong><span>Administrator</span></span>
+					</div>
+					<a class="btn logout-button" href="/login"><span aria-hidden="true">↗</span> Log off</a>
+				</div>
+			</header>
+
+			<main class="dashboard-content">
+				<div class="page-heading">
+					<div>
+						<p class="page-eyebrow">PEOPLE OVERVIEW</p>
+						<h1>Team dashboard</h1>
+						<p class="page-subtitle">A clear view of your people and the day ahead.</p>
+					</div>
+					<span class="date-chip"><span aria-hidden="true">◷</span> Today</span>
+				</div>
+
+				<section class="metrics" aria-label="Team summary">
+					<article class="metric-item">
+						<div class="metric-topline"><span>Total employees</span><span class="metric-icon employees-icon" aria-hidden="true">♙</span></div>
+						<p class="metric-value">24</p>
+						<p class="metric-footnote"><span class="metric-change">+2</span> this month</p>
+					</article>
+					<article class="metric-item">
+						<div class="metric-topline"><span>Present today</span><span class="metric-icon present-icon" aria-hidden="true">✓</span></div>
+						<p class="metric-value">18</p>
+						<p class="metric-footnote"><span class="status-dot"></span> Across all teams</p>
+					</article>
+					<article class="metric-item">
+						<div class="metric-topline"><span>On leave</span><span class="metric-icon leave-icon" aria-hidden="true">◷</span></div>
+						<p class="metric-value">2</p>
+						<p class="metric-footnote">Returning this week</p>
+					</article>
+				</section>
+
+				<section class="activity-section" aria-labelledby="activity-title">
+					<div class="section-heading">
+						<div>
+							<h2 id="activity-title">Team activity</h2>
+							<p>Recent updates from your people</p>
+						</div>
+						<a class="view-all" href="/admin/employeesList">View employees <span aria-hidden="true">→</span></a>
+					</div>
+					<div class="activity-list">
+						<div class="activity-row">
+							<span class="activity-avatar avatar-peach" aria-hidden="true">AM</span>
+							<div class="activity-person"><strong>Alex Morgan</strong><span>Operations</span></div>
+							<span class="activity-detail">Checked in for the day</span>
+							<span class="activity-time">9:02 AM</span>
+							<span class="activity-state"><i></i> Present</span>
+						</div>
+						<div class="activity-row">
+							<span class="activity-avatar avatar-sage" aria-hidden="true">JT</span>
+							<div class="activity-person"><strong>Jamie Taylor</strong><span>Customer care</span></div>
+							<span class="activity-detail">Updated contact details</span>
+							<span class="activity-time">8:46 AM</span>
+							<span class="activity-state"><i></i> Present</span>
+						</div>
+						<div class="activity-row">
+							<span class="activity-avatar avatar-gold" aria-hidden="true">SK</span>
+							<div class="activity-person"><strong>Sam Kim</strong><span>People team</span></div>
+							<span class="activity-detail">Leave request approved</span>
+							<span class="activity-time">Yesterday</span>
+							<span class="activity-state away-state"><i></i> Away</span>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+</div>

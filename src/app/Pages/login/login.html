@@ -1,0 +1,74 @@
+<main class="login-page">
+	<div class="login-layout">
+		<section class="welcome-panel" aria-label="Employee management">
+			<a class="brand" href="/login" aria-label="Employee management home">
+				<span class="brand-mark" aria-hidden="true">e</span>
+				<span class="brand-name">employee<span>hub</span></span>
+			</a>
+
+			<div class="welcome-copy">
+				<p class="overline">EMPLOYEE MANAGEMENT</p>
+				<h1>Your people.<br />Your place.</h1>
+				<p class="welcome-description">A thoughtful space to support your team and keep the workday moving.</p>
+			</div>
+
+			<div class="roster-preview" aria-label="Example team roster">
+				<div class="preview-heading">
+					<div>
+						<p class="preview-label">TEAM OVERVIEW</p>
+						<p class="preview-title">Today at a glance</p>
+					</div>
+					<span class="preview-date">MON, 26 OCT</span>
+				</div>
+				<div class="preview-row">
+					<span class="person-dot dot-one" aria-hidden="true">AM</span>
+					<span class="person-name">Alex Morgan</span>
+					<span class="person-status"><i></i> On shift</span>
+				</div>
+				<div class="preview-row">
+					<span class="person-dot dot-two" aria-hidden="true">JT</span>
+					<span class="person-name">Jamie Taylor</span>
+					<span class="person-status"><i></i> On shift</span>
+				</div>
+				<div class="preview-row">
+					<span class="person-dot dot-three" aria-hidden="true">SK</span>
+					<span class="person-name">Sam Kim</span>
+					<span class="person-status off-shift"><i></i> Away</span>
+				</div>
+			</div>
+
+			<p class="welcome-footer">A little more ease in every workday.</p>
+		</section>
+
+		<section class="form-panel" aria-labelledby="login-title">
+			<div class="form-content">
+				<div class="mobile-brand" aria-hidden="true">
+					<span class="brand-mark">e</span>
+					<span class="brand-name">employee<span>hub</span></span>
+				</div>
+				<p class="form-overline">GOOD TO SEE YOU AGAIN</p>
+				<h2 id="login-title">Welcome back</h2>
+				<p class="form-description">Sign in to continue to your workspace.</p>
+
+				<form class="login-form" autocomplete="on">
+					<div class="mb-4">
+						<label class="form-label" for="username">Username</label>
+						<input class="form-control" id="username" name="userName" [(ngModel)]='logibObj.userName' type="text" autocomplete="username" placeholder="Enter your username" />
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="password">Password</label>
+						<input class="form-control" id="password" name="password" [(ngModel)]='logibObj.password' type="password" autocomplete="current-password" placeholder="Enter your password" />
+					</div>
+					<div class="form-check remember-row">
+						<input class="form-check-input" id="rememberMe" name="rememberMe" type="checkbox" />
+						<label class="form-check-label" for="rememberMe">Keep me signed in</label>
+					</div>
+					<button class="btn login-button" type="button" (click)="onLogin()">Sign in <span aria-hidden="true">→</span></button>
+				</form>
+
+				<p class="form-note"><span aria-hidden="true">✳</span> Your account details stay private.</p>
+			</div>
+			<footer class="form-footer"><span>© 2026 EmployeeHub</span><span>Help with access? Contact your administrator.</span></footer>
+		</section>
+	</div>
+</main>
